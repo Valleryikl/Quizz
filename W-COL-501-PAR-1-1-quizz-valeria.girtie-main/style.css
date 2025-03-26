@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 0 5%;
+}
+button {
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:disabled {
+    transform: scale(1);
+    cursor: default;
+    color: white;
+}
+.question {
+    margin-bottom: 35px;
+    font-size: 30px;
+    animation: font 10s infinite ease-in-out;
+}
+.text {
+    font-size: 30px;
+}
+@keyframes font {
+    from {
+        transform: scale(1);
+    } 25% {
+        transform: scale(1.1);
+    } 50% {
+        transform: scale(1);
+    } 75% {
+        transform: scale(1.1);
+    } 100% {
+        transform: scale(1);
+    }
+}
